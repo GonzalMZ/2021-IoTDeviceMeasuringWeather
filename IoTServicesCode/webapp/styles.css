@@ -1,0 +1,63 @@
+/*
+ * Style sheets file to implement layout for 
+ * Operating Systems Desing exercises.
+ */
+*{
+	font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+body{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+body >div{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	justify-content: space-around;
+	width:80%;
+}
+h1{
+	color: rgb(89, 151, 231);
+	text-align: center;
+	font-weight: lighter;
+	margin-bottom: 50px;
+}
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	margin-right: -20%;
+}
+  
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+  
+tr:nth-child(odd) {
+	background-color: #e0e8f0;
+}
+tr:first-child{
+	background-color: #aac9e7;
+}
+th{
+	border-color: #6ca7e2;
+}
+td:last-child{
+	background-color: white;
+	padding: 10px 5px 10px 20px;
+	border: 0;
+}
+button{
+	width:100px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 20;
+	background-color: #e0e8f0;
+	border: 1px solid grey;
+	box-shadow: 2px 2px grey;
+}

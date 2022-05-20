@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DSO - Interfaz de Usuario</title>
+	<link rel="stylesheet" type="text/css" href="styles_meassures.css">
+	<meta charset="ISO-8859-1">
+	<script src ="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js_lib.js"></script>
+</head>
+<body>
+	<div>
+		<h2></h2>
+		<div id="divFiltro">
+			<div>
+				<label for="fechaIni">Inicio:</label>
+				<input type="date" id="fechaIni">
+			</div>
+			<div>
+				<label for="fechaFin">Fin:</label>
+				<input type="date" id="fechaFin">
+			</div>
+			<button onclick="filtrar()">Filtrar</button>
+		</div>
+		<table id="tabla_meassures">
+			<tr>
+				<th>Fecha</th>
+				<th>Temperatura &#176C</th>
+				<th>Humedad</th>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>
